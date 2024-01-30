@@ -18,7 +18,6 @@ const checkOrder = function (available, ordered) {
             break
         default:
             return "Your order is accepted"
-            break
     }
 }
 

@@ -6,7 +6,7 @@
  * випадку.
  */
 
-const isOld = (age) => age >= 18
+const isAdult = (age) => age >= 18
 
-console.log(isOld(25))
-console.log(isOld(15))
+console.log(isAdult(25))
+console.log(isAdult(15))
