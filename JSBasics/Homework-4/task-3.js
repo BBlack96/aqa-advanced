@@ -19,6 +19,4 @@ console.log("-------------------") // Для того щоб візуально 
 while (loopVariable <= 10){
     console.log(`${customMultiplier} x ${loopVariable} = ${customMultiplier * loopVariable}`)
     loopVariable++
-
-
 }
