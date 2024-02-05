@@ -20,7 +20,7 @@ function divide(numerator, denominator) {
     switch (true){
         case denominator === 0:
             throw new Error("Can`t divide by 0")
-        case isNaN(numerator) || isNaN(denominator):
+        case typeof numerator !== 'number' || typeof denominator !== 'number':
             throw new Error("All values should be numbers")
     }
     return result
