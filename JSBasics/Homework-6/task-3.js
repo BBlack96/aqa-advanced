@@ -22,7 +22,7 @@ function divide(numerator, denominator) {
         case typeof numerator !== 'number' || typeof denominator !== 'number':
             throw new Error("All values should be numbers")
     }
-    return numerator / denominator;
+    return numerator / denominator
 }
 
 
