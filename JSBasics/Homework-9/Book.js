@@ -11,11 +11,11 @@ export default class Book {
     }
 
     set title(newTitle) {
-        if (typeof newTitle === 'string') {
-            this._title = newTitle;
-        } else {
+        if (typeof newTitle !== 'string') {
             console.log("Name of book should be String");
+            return
         }
+        this._title = newTitle;
     }
 
     get author() {
@@ -23,11 +23,11 @@ export default class Book {
     }
 
     set author(newAuthor) {
-        if (typeof newAuthor === 'string') {
-            this._author = newAuthor;
-        } else {
+        if (typeof newAuthor !== 'string') {
             console.log("Author of book should be String");
+            return
         }
+        this._title = newAuthor;
     }
 
     get year() {
@@ -35,11 +35,11 @@ export default class Book {
     }
 
     set year(newYear) {
-        if (typeof newYear === 'number' && newYear > 0) {
-            this._year = newYear;
-        } else {
-            console.log("Year of production should be Number");
+        if (typeof newYear !== 'number') {
+            console.log("Year of book should be Number");
+            return
         }
+        this._title = newYear;
     }
 
     printInfo(){
