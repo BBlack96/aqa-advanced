@@ -3,7 +3,7 @@ import EBook from "./EBook.js";
 
 const firstBook = new Book("Carrie", "Stephen King", 1976)
 const secondBook = new Book("The lord of the Ring", "John Tolkien", 1954)
-const thirdBook = new EBook("The Dark Tower", "Stephen King", 1950, "PDF")
+const thirdBook = new EBook("The Dark Tower", "Stephen King", 1956, "PDF")
 const fourthBook = new EBook("IT", "Stephen King", 1986, "EDUB")
 const ebook = EBook.fromBookAndFileFormat(fourthBook, "EDUB")
 

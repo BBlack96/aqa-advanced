@@ -11,7 +11,11 @@ export default class Book {
     }
 
     set title(newTitle) {
-        typeof newTitle === 'string'? this._title = newTitle : console.log("Name of book should be String")
+        if (typeof newTitle === 'string') {
+            this._title = newTitle;
+        } else {
+            console.log("Name of book should be String");
+        }
     }
 
     get author() {
@@ -19,7 +23,11 @@ export default class Book {
     }
 
     set author(newAuthor) {
-        typeof newAuthor === 'string'? this._author = newAuthor : console.log("Author of book should be String")
+        if (typeof newAuthor === 'string') {
+            this._author = newAuthor;
+        } else {
+            console.log("Author of book should be String");
+        }
     }
 
     get year() {
@@ -27,20 +35,23 @@ export default class Book {
     }
 
     set year(newYear) {
-        typeof newYear === 'number' && newYear > 0 ? this._year = newYear : console.log("Year of production should be Number")
+        if (typeof newYear === 'number' && newYear > 0) {
+            this._year = newYear;
+        } else {
+            console.log("Year of production should be Number");
+        }
     }
 
     printInfo(){
-        console.log(`Author : ${this._author}, Title: ${this._title}, Year: ${this._year}`)
+        console.log(`Author : ${this._author}, Title: ${this._title}, Year: ${this._year}`);
     }
 
     static findOldestBook(books){
-        let oldestBook = books[0];
-        for (let i = 0; i < books.length; i++){
-            if (books[i]._year < oldestBook._year){
-                oldestBook = books[i]
-            }
+        if (books.length === 0) {
+            return "No books found";
         }
-        return oldestBook._title
+
+        const sortedBooks = books.sort((a, b) => a._year - b._year);
+        return sortedBooks[0]._title;
     }
 }
