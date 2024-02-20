@@ -1,7 +1,7 @@
-function showTheText (text, seconds){
+function printWithDelay (text, milliseconds){
     setTimeout(()=> {
         console.log(text)
-    }, seconds)
+    }, milliseconds )
 }
 
-showTheText('Hello world', 5000)
+printWithDelay('Hello world', 5000)
