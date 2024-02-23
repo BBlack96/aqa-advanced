@@ -16,41 +16,35 @@
  */
 
 function divide(numerator, denominator) {
-    switch (true){
-        case denominator === 0:
-            throw new Error("Can`t divide by 0")
-        case typeof numerator !== 'number' || typeof denominator !== 'number':
-            throw new Error("All values should be numbers")
-    }
-    return numerator / denominator
+  switch (true) {
+    case denominator === 0:
+      throw new Error('Can`t divide by 0');
+    case typeof numerator !== 'number' || typeof denominator !== 'number':
+      throw new Error('All values should be numbers');
+  }
+  return numerator / denominator;
 }
-
 
 try {
-    console.log(divide(5, 0))
+  console.log(divide(5, 0));
 } catch (e) {
-    console.log('Сталася помилка:',e)
+  console.log('Сталася помилка:', e);
+} finally {
+  console.log('Робота завершена');
 }
-finally {
-    console.log("Робота завершена")
-}
-
 
 try {
-    console.log(divide(false, "String"))
+  console.log(divide(false, 'String'));
 } catch (e) {
-    console.log('Сталася помилка:',e)
+  console.log('Сталася помилка:', e);
+} finally {
+  console.log('Робота завершена');
 }
-finally {
-    console.log("Робота завершена")
-}
-
 
 try {
-    console.log(divide(10, 2))
+  console.log(divide(10, 2));
 } catch (e) {
-    console.log('Сталася помилка:',e)
-}
-finally {
-    console.log("Робота завершена")
+  console.log('Сталася помилка:', e);
+} finally {
+  console.log('Робота завершена');
 }

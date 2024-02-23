@@ -6,9 +6,9 @@
  * Виведіть результат в консоль.
  */
 
-const firstName = 'Bohdan'
-const secondName = 'Vladislava'
-const greeting = "Hello " + firstName + ' and ' + secondName
+const firstName = 'Bohdan';
+const secondName = 'Vladislava';
+const greeting = `Hello ${firstName} and ${secondName}`;
 
-console.log(greeting)
-console.log(`Hello ${firstName} and ${secondName}`)
+console.log(greeting);
+console.log(`Hello ${firstName} and ${secondName}`);

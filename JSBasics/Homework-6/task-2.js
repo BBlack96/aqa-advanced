@@ -7,10 +7,10 @@
  */
 
 function recursionFunction(num) {
-    console.log(num)
-    if (num > 0) {
-        recursionFunction(num - 1)
-    }
+  console.log(num);
+  if (num > 0) {
+    recursionFunction(num - 1);
+  }
 }
 
-recursionFunction(5)
+recursionFunction(5);

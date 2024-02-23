@@ -9,18 +9,18 @@
  */
 
 const checkOrder = function (available, ordered) {
-    switch (true) {
-        case available < ordered:
-            return "Your order is too large, we don’t have enough goods."
-            break
-        case ordered === 0:
-            return "Your order is empty"
-            break
-        default:
-            return "Your order is accepted"
-    }
-}
+  switch (true) {
+    case available < ordered:
+      return 'Your order is too large, we don’t have enough goods.';
+      break;
+    case ordered === 0:
+      return 'Your order is empty';
+      break;
+    default:
+      return 'Your order is accepted';
+  }
+};
 
-console.log(checkOrder(5, 10))
-console.log(checkOrder(5, 5))
-console.log(checkOrder(5, 0))
+console.log(checkOrder(5, 10));
+console.log(checkOrder(5, 5));
+console.log(checkOrder(5, 0));

@@ -7,8 +7,8 @@
  * Виведіть усі змінні в консоль
  */
 
-const myAge = 27
-const isAdult = myAge >= 18
+const myAge = 27;
+const isAdult = myAge >= 18;
 
-console.log(myAge)
-console.log(isAdult)
+console.log(myAge);
+console.log(isAdult);
