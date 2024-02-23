@@ -1,10 +1,10 @@
 const book = {
-    title: "Carrie",
-    author: "Stephen King",
-    year: 197
-}
+  title: 'Carrie',
+  author: 'Stephen King',
+  year: 197,
+};
 
-const {title, author} = book
+const { title, author } = book;
 
-console.log(title)
-console.log(author)
+console.log(title);
+console.log(author);

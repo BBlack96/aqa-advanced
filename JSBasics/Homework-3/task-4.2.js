@@ -4,8 +4,8 @@
  * Обчисліть площу прямокутника за формулою length * width і виведіть результат.
  */
 
-const rectangleLength = 5
-const rectangleWidth = 3
-const rectangleArea = (rectangleLength * rectangleWidth).toFixed(2)
+const rectangleLength = 5;
+const rectangleWidth = 3;
+const rectangleArea = (rectangleLength * rectangleWidth).toFixed(2);
 
-console.log(rectangleArea)
+console.log(rectangleArea);

@@ -11,16 +11,16 @@
  */
 
 function handleNum(number, onEven, onOdd) {
-    number % 2 === 0 ? onEven() : onOdd()
+  number % 2 === 0 ? onEven() : onOdd();
 }
 
 function handleEven() {
-    console.log('number is even')
+  console.log('number is even');
 }
 
 function handleOdd() {
-    console.log('number is odd')
+  console.log('number is odd');
 }
 
-handleNum(2, handleEven, handleOdd)
-handleNum(7, handleEven, handleOdd)
+handleNum(2, handleEven, handleOdd);
+handleNum(7, handleEven, handleOdd);

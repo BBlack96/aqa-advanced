@@ -5,18 +5,18 @@
  * Реалізуйте функцію трьома способами (function declaration, function expression, arrow function)
  */
 
-//function declaration
+// function declaration
 function calculateRectangleArea(width, height) {
-    return width * height
+  return width * height;
 }
-console.log(calculateRectangleArea(5, 10))
+console.log(calculateRectangleArea(5, 10));
 
-//function expression
+// function expression
 const getRectangleArea = function (width, height) {
-    return width * height
-}
-console.log(getRectangleArea(6, 11))
+  return width * height;
+};
+console.log(getRectangleArea(6, 11));
 
-//arrow function
-const calculateArea = (width, height) => width * height
-console.log(calculateArea(7, 11))
+// arrow function
+const calculateArea = (width, height) => width * height;
+console.log(calculateArea(7, 11));
